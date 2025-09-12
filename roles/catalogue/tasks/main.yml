@@ -14,7 +14,8 @@
     state: latest
 
 - name: Load Master Data
-  ansible.builtin.shell: mongosh --host mongodb-omshiva.shop </app/db/master-data.js
+  ansible.builtin.shell: mongosh --host mongodb-dev.omshiva.shop </app/db/master-data.js
+
 
 - name: Run systemd_setup
   ansible.builtin.include_role:
